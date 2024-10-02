@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandBlast:sombara restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<style>
+		
+
+		.body {
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		.desktop_hide,
+		.desktop_hide table {
+			mso-hide: all;
+			display: none;
+			max-height: 0px;
+			overflow: hidden;
+		}
+
+		.image_block img+div {
+			display: none;
+		}
+
+		@media (max-width:660px) {
+			.image_block div.fullWidth {
+				max-width: 100% !important;
+			}
+
+			.mobile_hide {
+				display: none;
+			}
+
+			.row-content {
+				width: 100% !important;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+
+			.mobile_hide {
+				min-height: 0;
+				max-height: 0;
+				max-width: 0;
+				overflow: hidden;
+				font-size: 0px;
+			}
+
+			.desktop_hide,
+			.desktop_hide table {
+				display: table !important;
+				max-height: none !important;
+			}
+		}
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+    background-color: #f1ee32d3;
+    }
+    .text-color{
+        color:#9c9a04d3;
+        font-size: 22px;
+    }
+    @media(max-width:573px){
+        .text-color{
+        padding: 12px;
+        font-size: 16px;
+        
+    }
+    }
+    @keyframes clr {
+        0%{
+            color: rgb(211, 224, 19);
+        }
+        10%{
+            color: rgb(117, 124, 10);
+        }
+        20%{
+            color: rgb(131, 138, 39);
+        }
+        30%{
+            color: rgb(218, 179, 72);
+        }
+        40%{
+            color: rgb(243, 199, 3);
+        }
+        50%{
+            color: rgb(240, 174, 51);
+        }
+        60%{
+            color: rgb(228, 112, 4);
+        }
+        70%{
+            color: rgb(255, 126, 6);
+        }
+        80%{
+            color: rgb(224, 108, 0);
+        }
+        90%{
+            color: rgb(218, 105, 0);
+        }
+        100%{
+            color: rgb(146, 97, 51);
+        }
+       }	
+		h1,p
+		 {
+			margin: 0
+		}
+		.bee-row-content {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex
+		}
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+		.bee-row-1 .bee-col-2 .bee-block-1 {
+			color: #1e2f40;
+			font-family: inherit;
+			font-size: 16px;
+			padding-right: 15px;
+			padding-top: 10px;
+			text-align: right
+		}		
+		.bee-row-3 .bee-col-2 .bee-block-5,
+		.bee-row-6 .bee-col-1 .bee-block-5,
+		.bee-row-6 .bee-col-2 .bee-block-5,
+		.bee-row-6 .bee-col-3 .bee-block-5,
+		.bee-row-6 .bee-col-4 .bee-block-5 {
+			padding: 10px 10px 20px 20px
+		}
+		.bee-row-6 .bee-col-1,
+		.bee-row-6 .bee-col-2,
+		.bee-row-6 .bee-col-3,
+		.bee-row-6 .bee-col-4 {
+			background-color: #ffbb00;
+			border-bottom: 4px solid #F8ECDA;
+			border-left: 4px solid #F8ECDA;
+			border-right: 4px solid #F8ECDA;
+			border-top: 4px solid #F8ECDA
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-3,
+		.bee-row-6 .bee-col-2 .bee-block-3,
+		.bee-row-6 .bee-col-3 .bee-block-3,
+		.bee-row-6 .bee-col-4 .bee-block-3 {
+			padding: 5px 5px 5px 20px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-14 .bee-col-1 .bee-block-1,
+		.bee-row-14 .bee-col-2 .bee-block-1,
+		.bee-row-14 .bee-col-2 .bee-block-2,
+		.bee-row-14 .bee-col-2 .bee-block-3,
+		.bee-row-14 .bee-col-2 .bee-block-4,
+		.bee-row-14 .bee-col-3 .bee-block-1,
+		.bee-row-14 .bee-col-3 .bee-block-2,
+		.bee-row-14 .bee-col-3 .bee-block-3,
+		.bee-row-14 .bee-col-3 .bee-block-4,
+		.bee-row-14 .bee-col-4 .bee-block-1,
+		.bee-row-6 .bee-col-1 .bee-block-4,
+		.bee-row-6 .bee-col-2 .bee-block-4,
+		.bee-row-6 .bee-col-3 .bee-block-4,
+		.bee-row-6 .bee-col-4 .bee-block-4 {
+			padding: 10px 10px 10px 20px
+		}
+		.bee-row-6 .bee-col-1 .bee-block-5,
+		.bee-row-6 .bee-col-2 .bee-block-5,
+		.bee-row-6 .bee-col-3 .bee-block-5,
+		.bee-row-6 .bee-col-4 .bee-block-5 {
+			color: #686868;
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			line-height: 150%;
+			text-align: left
+		}
+        .h31{
+            margin: 16px;
+             animation: clr infinite 5s ease alternate ;
+         }
+		@media (max-width:768px) {
+			.bee-form form {
+				width: 100% !important
+			}
+
+			img.bee-fullwidthOnMobile {
+				max-width: none !important
+			}
+
+
+			.bee-menu ul.with-bee-hamburger li {
+				display: block;
+				text-align: center
+			}
+
+			.bee-menu ul.with-bee-hamburger li a {
+				text-decoration: none
+			}
+
+			.bee-menu ul.with-bee-hamburger span {
+				display: none
+			}
+
+			#bee-hamburger-memu-r0c1m0:checked~ul,
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls {
+				width: 36px;
+				height: 36px;
+				background-color: #1e2f40;
+				border-radius: 0
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls span {
+				width: 18px;
+				height: 18px
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-open {
+				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgd2lkdGg9IjY0IiB5PSI1MiIvPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiIHk9IjI2Ii8+PC9nPjwvc3ZnPg==");
+				transform: translate(-50%, -50%) scaleY(1)
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-close {
+				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB0cmFuc2Zvcm09Im1hdHJpeCgtLjcwNzEwNjc4IC0uNzA3MTA2NzggLjcwNzEwNjc4IC0uNzA3MTA2NzggMzEuOTkxMzc4IDc3LjIzNDAxOSkiIHdpZHRoPSI4MiIgeD0iLTkuMDA4NjIyIiB5PSIyNS45OTEzNzgiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgdHJhbnNmb3JtPSJtYXRyaXgoLS43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAtLjcwNzEwNjc4IDc3LjgxOTgwNiAzMi4yMzQwMTkpIiB3aWR0aD0iODIiIHg9Ii04Ljc2NTk4MSIgeT0iMjYuMjM0MDE5Ii8+PC9nPjwvc3ZnPg==");
+				transform: translate(-50%, -50%) scaleY(0)
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-1 ul.with-bee-hamburger {
+				background-color: #1e2f40
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-1 ul.with-bee-hamburger li,
+			.bee-row-1 .bee-col-2 .bee-block-1 ul.with-bee-hamburger li a {
+				color: #ffffff
+			}
+
+			#bee-hamburger-memu-r0c1m0:checked~.bee-hamburger-controls .bee-hamburger-open {
+				transform: translate(-50%, -50%) scaleY(0)
+			}
+
+			#bee-hamburger-memu-r0c1m0:checked~.bee-hamburger-controls .bee-hamburger-close {
+				transform: translate(-50%, -50%) scaleY(1)
+			}
+		}
+        .w-img{
+            max-width:352px;
+            aspect-ratio: 1;
+            padding-bottom: 52px;
+        }
+        @media (max-width:780px){
+            .w-img{
+                padding-bottom: 2px;
+            max-width:127px;
+            margin-block: 9px;
+            margin-left: 9px;
+            border-radius: 12px;
+        }
+            .fix-mobil{
+                background-color: #ff9900;
+                padding-top: 2px;
+          
+                
+            }
+        }
+        footer a:hover ,  .bgf-hover:hover{
+
+        background-color: #974f1b ;
+        box-shadow: #e98233 1px 0px 22px ;
+        border-radius: 22px;
+            }
+
+        .bi-telephone-fill ,  .bi-envelope-fill, .bi-instagram {
+        width: 24px;
+        height: 24px;
+        margin: 4px;
+        fill: currentColor;
+        transition: transform 0.1s ease;
+        }
+        .bi-envelope-fill:hover, .bi-telephone-fill:hover , .bi-instagram:hover {
+        transform: translateY(-3px);
+        }
+        .bgf{
+        background-color: #f39d12;
+        }
+    </style>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-sm bg-warning pt-0  navbar-dark ">
+            <div class="container-fluid ">
+                <a href="#" class="navbar-brand ">
+                    <img src="sumb.png" class="pt-0" width="79px" alt=" sumbara logo ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse justify-content-end " id="colNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                  </svg> Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../les resturant/restu.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z"/>
+                  </svg> Precedent</a>
+                </li>
+            </div>
+        </div>
+</nav>
+    
+</header>
+    <div class="mt-2">
+        <ul class="nav nav-pills d-flex justify-content-between text-capitalize" role="tablist">
+            <li class="nav-item">
+                <a data-bs-toggle="pill" href="#Tacos" class=" nav-link active text-color">Tacos</a>
+            </li>
+            <li class="nav-item">
+                <a data-bs-toggle="pill" href="#wraps" class="nav-link text-color">Warps</a>
+            </li>
+            <li class="nav-item">
+                <a data-bs-toggle="pill" href="#pizza" class="nav-link text-color">pizza</a>
+            </li>
+            <li class="nav-item">
+                <a data-bs-toggle="pill" href="#sandwich" class="nav-link text-color">Sandwichs</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="Tacos" class="container tab-pane active">
+                <div class="p-3 mx-4 text-center">
+                    <h1 class="h31 text-capitalize"> <strong>best Tacos in the city</strong> </h1>
+                </div>
+                <div class="bee-row-content">     
+                    <div class="bee-row bee-row-6">
+                        <div class="bee-row-content">
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="Tacos Fromage.jpg" style="max-width:352px;aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> Tacos Fromage </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>33.5</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos fromage avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Tacos bouef haché" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="Tcaos boeuf  haché.jpg" style="max-width:352px; aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>Tacos Boeuf Haché </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>31.99</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 Sauce</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos beouef haché avec deux sauce et fries</span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Tacos indian" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="tacos indian.jpg" style="max-width:352px; aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>Tacos Merguez </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>30.99</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 Sauce</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos Indian avec deux sauce et fries</span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Tacos MERGUES" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="Tacos MERGUES.jpg" style="max-width:352px; aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>Tacos Merguez </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>30.99</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 Sauce</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos Merguez avec deux sauce et fries</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bee-row-content">     
+                    <div class="bee-row bee-row-6">
+                        <div class="bee-row-content">
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Smokey Bacon Burger" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="TACOS CRIPSY.jpg" style="max-width:352px;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>Tacos cripsy</strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>30.99</span></strong></span><span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; Soda</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos CHecken Cripsy avec deux sauce et fries</span></p>
+                                 </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="TACOS FRENSH.jpg" style="max-width:352px;aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> Tacos Fromage </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>33.5</span></strong></span><span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos frensh avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Tacos bouef haché" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="TACOS NUGGET.jpg" style="max-width:352px; aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>Tacos Boeuf Haché </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>31.99</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 Sauce</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos Nugget haché avec deux sauce et fries</span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Tacos indian" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="TACOS VIANDE.jpg" style="max-width:352px; aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>Tacos Merguez </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>30.99</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 Sauce</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Tacos Viande avec deux sauce et fries</span></p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wraps" class="container tab-pane fade">
+                <div class="p-3 mx-4 text-center">
+                    <h1 class="h31 text-capitalize"> <strong>best Warps of al time</strong> </h1>
+                </div>
+                <div class="bee-row-content">     
+                    <div class="bee-row bee-row-6">
+                        <div class="bee-row-content">
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="Wraps chicken.jpg" style="max-width:352px;aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> Wraps chicken </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>25.5</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Wraps chicken avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Tacos bouef haché" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="Mixed grill wraps.jpg" style="max-width:352px; aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>Mixed grill wraps</strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>24.99</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 Sauce</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Mixed grill wrapsavec deux sauce et fries</span></p>
+                                </div>
+                            </div>
+
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="Tacos indian" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="Oriental Chicken Wrap.jpg" style="max-width:352px; aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong>OrientalWrap </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>25.99</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 Sauce</span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>Oriental Chicken Wrap avec deux sauce et fries</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+            <div id="sandwich" class="container tab-pane fade">
+                <div class="p-3 mx-4 text-center">
+                    <h1 class="h31 text-capitalize"> <strong>best Sandwich of the city</strong> </h1>
+                </div>
+                <div class="bee-row-content">     
+                    <div class="bee-row bee-row-6">
+                        <div class="bee-row-content">
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="sandwich frimier .jpg" style="max-width:352px;aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> sandwich frimier </strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>25</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>sandwich frimier avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="sandwich pakito .jpg" style="max-width:352px;aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> sandwich pakito</strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>25</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>sandwich pakito avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="sandwich réco.jpg" style="max-width:352px;aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> sandwich réco</strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>25</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>sandwich réco avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="sandwich Kefta.jpg" style="max-width:352px;aspect-ratio:1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> sandwich kefta</strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>24</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>sandwich kefta avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+                            <div class="bee-col bee-col-1 bee-col-w3">
+                                <div class="bee-block bee-block-1 bee-image"><img alt="tacos fromage" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="sandwich latinos.jpg" style="max-width:352px;aspect-ratio: 1;" /></div>
+                                <div class="bee-block bee-block-2 bee-divider">
+                                    <div class="spacer" style="height:0px;"></div>
+                                </div>
+                                <div class="bee-block bee-block-3 bee-heading">
+                                    <h1 style="color:#1e2f40;direction:ltr;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:21px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><strong> sandwich latinos</strong> </h1>
+                                </div>
+                                <div class="bee-block bee-block-4 bee-text">
+                                    <div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+                                        <p style="font-size: 14px; line-height: 16px; text-align: left;"><span style="font-size: 18px; line-height: 21px;"><span style="font-size: 20px; line-height: 24px; color: #ff6600;"><strong ><span style="line-height: 14px;"><span style="font-size: 14px; line-height: 16px;">MAD</span>25</span></strong></span>   <span style="font-size: 14px; color: #828282; line-height: 16px;">Fries &amp; 2 sauce  </span></span></p>
+                                    </div>
+                                </div>
+                                <div class="bee-block bee-block-5 bee-paragraph">
+                                    <p style="word-break:break-word;"><span>sandwich latinos avec deux sauce et fries  </span></p>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pizza" class="d-flex justify-content-center tab-pane fade">
+                <div class="body" style="background-color: #fde0b4; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+                    
+                                    <table class="row row-1" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000000; background-position: top center; width: 640px; margin: 0 auto;" width="640">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+                                                                    <div class="spacer_block block-1" style="height:35px;line-height:35px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-2" style="height:15px;line-height:15px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-3" style="height:25px;line-height:25px;font-size:1px;">&#8202;</div>
+                                                                    <table class="image_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
+                                                                                <div class="alignment" align="center" style="line-height:10px">
+                                                                                    <div class="fullWidth" style="max-width: 640px;"><img src="PIZZA.png" style="display: block; height: auto; border: 0; width: 100%;" width="640" alt="PIZZA" title="PIZZA"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-5" style="height:30px;line-height:30px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-6" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-7" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h1 style="margin: 0; color: #e16614; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 41px; font-weight: normal; letter-spacing: 5px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 49.199999999999996px;"><strong>PIZZA SOMBARA</strong></h1>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-8" style="height:15px;line-height:15px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-9" style="height:25px;line-height:25px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-10" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h1 style="margin: 0; color: #fa924b; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-weight: normal; letter-spacing: 2px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><span class="tinyMce-placeholder">PIZZA POULET AND PIZZA 4 SAISON</span></h1>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-11" style="height:15px;line-height:15px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-12" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #242424; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 21px; font-weight: normal; letter-spacing: 9px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 25.2px;"><span class="tinyMce-placeholder">JUST 39 MAD</span></h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-13" style="height:20px;line-height:20px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-14" style="height:25px;line-height:25px;font-size:1px;">&#8202;</div>
+                                                                    <table class="divider_block block-15" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad">
+                                                                                <div class="alignment" align="center">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                                        <tr>
+                                                                                            <td class="divider_inner" style="font-size: 1px; line-height: 1px; border-top: 30px solid #FDE0B4;"><span>&#8202;</span></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-16" style="height:35px;line-height:35px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-17" style="height:0px;line-height:0px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-18" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #242424; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 21px; font-weight: normal; letter-spacing: 11px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 25.2px;">-CHOOSE YOUR-</h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-19" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-20" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h1 style="margin: 0; color: #fa924b; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 39px; font-weight: normal; letter-spacing: 10px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 46.8px;">favorite <strong>pizza</strong></h1>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-21" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="row row-2" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000000; width: 640px; margin: 0 auto;" width="640">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+                                                                    <table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="width:100%;">
+                                                                                <div class="alignment" align="center" style="line-height:10px">
+                                                                                    <div style="max-width: 213.333px;"><img src="pizza-03.png" style="display: block; height: auto; border: 0; width: 100%;" width="213.333" alt="PIZZA01" title="PIZZA01"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-2" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #fa924b; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-weight: normal; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><strong>PIZZA&nbsp; THON</strong></h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-4" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-5" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-6" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #3c3c3c; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-weight: normal; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><span class="tinyMce-placeholder">30 MAD</span></h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-7" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-8" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                </td>
+                                                                <td class="column column-2" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+                                                                    <table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="width:100%;">
+                                                                                <div class="alignment" align="center" style="line-height:10px">
+                                                                                    <div style="max-width: 213.333px;"><img src="pizza-02.png" style="display: block; height: auto; border: 0; width: 100%;" width="213.333" alt="PIZZA02" title="PIZZA02"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-2" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #fa924b; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-weight: normal; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><strong>PIZZA FRUITS DE MER</strong></h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-4" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-5" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-6" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #3c3c3c; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-weight: normal; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><span class="tinyMce-placeholder">40 MAD</span></h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-7" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-8" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                </td>
+                                                                <td class="column column-3" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+                                                                    <table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="width:100%;">
+                                                                                <div class="alignment" align="center" style="line-height:10px">
+                                                                                    <div style="max-width: 213.333px;"><img src="pizza-01.png" style="display: block; height: auto; border: 0; width: 100%;" width="213.333" alt="PIZZA03" title="PIZZA03"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-2" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #fa924b; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-weight: normal; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><strong>PIZZA&nbsp; SOMBARA</strong></h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-4" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-5" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <table class="heading_block block-6" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
+                                                                                <h2 style="margin: 0; color: #3c3c3c; direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-weight: normal; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><span class="tinyMce-placeholder">43 MAD</span></h2>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div class="spacer_block block-7" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                    <div class="spacer_block block-8" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="row row-3" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000000; width: 640px; margin: 0 auto;" width="640">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+                                                                    <table class="empty_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad">
+                                                                                <div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="row row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000000; background-position: center top; width: 640px; margin: 0 auto;" width="640">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+                                                                    <table class="empty_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad">
+                                                                                <div></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="row row-5" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000; width: 640px; margin: 0 auto;" width="640">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+                                                                    <table class="empty_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td class="pad">
+                                                                                <div></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+            </div>
+        </div>
+        </div>
+        <footer class="bgf text-light py-3 mt-3">
+        
+            <div class="row text-white text-center mb-0  d-flex justify-content-between" style=" border-radius: 10px;">
+            
+                <div class="col-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                      </svg> 
+                      <div class="row">
+                        <div class="col-12"><a class="nav-link text-light" href="#">Martil:05 396-860 63</a></div>
+                        <div class="col-12"><a class="nav-link text-light" href="#">Tanger:05 394-280 22</a></div>
+                        <div class="col-12"><a class="nav-link text-light" href="#">tetouan tuta:+212 643 009 959</a></div>
+                        <div class="col-12"><a class="nav-link text-light" href="#">tetouan iso:05 399-999 21</a></div>
+                        
+                      </div>
+                </div>
+    
+                <div class="col-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                      </svg>
+                    <a class="nav-link text-light" href="https://www.sombarachicken.ma/">Sombara Cheken site web</a>
+                </div>
+
+                <div class="col-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg> <a class="nav-link text-light" href="https://www.instagram.com/sombarachicken?igsh=MTF6cmtjcng4NWFjaA==">Brandblast</a>
+                </div>
+            
+            </div>
+    </footer>
+
+    
+</body>
+</html>

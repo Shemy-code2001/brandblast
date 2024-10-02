@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECATHLON</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .search-form {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 20px; 
+        }
+
+        .search-input {
+            width: 300px; 
+            padding: 10px; 
+            border: 1px solid #CADEED; 
+            border-radius: 5px; 
+            font-size: 16px; 
+        }
+
+        .search-button {
+            padding: 10px 20px; 
+            background-color: #343a40; 
+            color: #DDECF4;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #212529;
+        }
+    </style>
+</head>
+<body style="background-color: #1E2B40;">
+    <div class="container">
+      <header class="mt-4 rounded" style="background-color: #194569;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="text-center text-light">DECATHLON TETOUAN</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                    </svg> <a href="/index.html" class="text-info text-decoration-none">Accueil</a>
+                </div>
+                <div class="col-md-4 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z"/>
+                    <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+                  </svg> <a href="/vetements.html" class="text-info text-decoration-none">Précédente</a>
+                </div>
+            </div>
+        </div>
+      </header>    
+        <nav class="navbar navbar-expand-sm" style="background-color: #5F84A2;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="zara logo.jpg" alt="Avatar Logo" class="rounded-circle" style="width: 42px; height: 42px;"> 
+              </a>
+            </div>
+            <form class="d-flex nav-items justify-content-end align-items-end mt-3 search-form" role="search">
+              <input type="text" id="searchField" placeholder="Recherche" class="search-input" oninput="search()">
+              <button class="search-button" style="font-size: small;">Rechercher</button>
+          </form>                    
+          </nav>
+          <main class="mt-2" style="background-color: #91AEC4;">
+            <div class="container" id="searchResults">
+                <div class="alert rounded text-center" style="background-color: #DDECF4; width: auto;">POLO'S</div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/POLO1.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Polo</h4>
+                              <p class="card-text">POLO DE GOLF COURTES FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 99,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/POLO2.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Polo</h4>
+                              <p class="card-text">POLO DE CONCOURS EQUITATION.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 199,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/POLO3.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Polo</h4>
+                              <p class="card-text">POLO DE GOLF COURTES FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 109,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/POLO4.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Polo</h4>
+                              <p class="card-text">POLO DE GOLF COURTES FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 149,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="alert rounded text-center" style="background-color: #DDECF4; width: auto;">PANTALONS</div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/pnt1.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Pantalon</h4>
+                              <p class="card-text">PANTALON REGULAR FITNESS FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 259,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/pnt2.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Pantalon</h4>
+                              <p class="card-text">PANTALON FITNESS FEMME .</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 209,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/pnt3.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Pantalon</h4>
+                              <p class="card-text">PANTALON SKI FEMME SLIDE.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 749,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/pnt4.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Pantalon</h4>
+                              <p class="card-text">PANTALON DE SKI DE PISTE FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 289,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="alert rounded text-center" style="background-color: #DDECF4; width: auto;">SWEAT'S</div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SWEAT1.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sweat</h4>
+                              <p class="card-text">SWEAT LOOSE FITNESS FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 249,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SWEAT2.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sweat</h4>
+                              <p class="card-text">SWEAT LOOSE FITNESS FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 179,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SWEAT3.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sweat</h4>
+                              <p class="card-text">SWEAT CROP FITNESS FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 259,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SWEAT4.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sweat</h4>
+                              <p class="card-text">SWEAT A CAPUCHE FITNESS FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 299,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="alert rounded text-center" style="background-color: #DDECF4; width: auto;">CHAUSSURES</div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CHASS1.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Chaussure</h4>
+                              <p class="card-text">CHAUSSURES DE RUNNIG FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 199,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CHASS2.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Chaussure</h4>
+                              <p class="card-text">CHAUSSURES DEMME EKIDEN ONE.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 149,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CHASS3.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Chaussure</h4>
+                              <p class="card-text">CHAUSSURES DE RUNNING FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 259,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CHASS4.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Chaussure</h4>
+                              <p class="card-text">CHAUSSURES DE RUNNING FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 199,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="alert rounded text-center" style="background-color: #DDECF4; width: auto;">CASQUETTES</div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CASQ1.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Casquette</h4>
+                              <p class="card-text">CASQUETTE ARTENGO TC.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 99,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CASQ2.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Casquette</h4>
+                              <p class="card-text">CASQUETTE RUNNING HOMME-FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 59,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CASQ3.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Casquette</h4>
+                              <p class="card-text">CASQUETTE RUNNING HOMME-FEMME.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 129,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/CASQ4.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Casquette</h4>
+                              <p class="card-text">CASQUETTE ARTENGO TC.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 99,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="alert rounded text-center" style="background-color: #DDECF4; width: auto;">LES SACS A DOS</div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SACADOS1.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sac a dos</h4>
+                              <p class="card-text">SAC A DOS 24L.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 149,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SACADOS2.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sac a dos</h4>
+                              <p class="card-text">SAC A DOS DE RANDONNEE 20L.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 399,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SACADOS3.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sac a dos</h4>
+                              <p class="card-text">SAC A DOS PLIABLE 10L.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 39,00 MAD</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card">
+                            <img class="card-img-top" src="/decathlon img/SACADOS4.jpg" alt="Card image" style="width:100%; height: 400px;">
+                            <div class="card-body" style="height: 200px;">
+                              <h4 class="card-title">Sac a dos</h4>
+                              <p class="card-text">SAC A DOS DE RANDONNEE 17L.</p>
+                              <div class="alert d-flex justify-content-center align-items-center" style="background-color: #CADEED;">Prix : 99,00 MAD</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="my-2" style="background-color: #B7D0E1;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <h3>TETOUAN</h3>
+                  </div>
+                  <div class="col-md-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                      </svg> 
+                      <div class="row">
+                          <div class="col-md-12">Parc d'activité Marjane Tetouan, Route de Sebta 93000 </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                      </svg> <p>0539715433</p>    
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            function search() {
+                const searchField = document.getElementById("searchField");
+                const searchTerm = searchField.value.toLowerCase();
+                const cards = document.querySelectorAll(".card");
+                cards.forEach(card => {
+                    const title = card.querySelector(".card-title").textContent.toLowerCase();
+                    const description = card.querySelector(".card-text").textContent.toLowerCase();
+                    if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = "";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suenos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-...">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            filter: blur(1px);
+            margin-top: 3px;
+            filter: drop-shadow(5px 5px 5px blue);
+        }
+
+        .hed {
+            background-image: url('/hed.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            border-radius: 25px;
+            filter: drop-shadow(5px 5px 5px black);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .btn-custom {
+            border: 3px dotted gold;
+            font-size: 15px;
+            font-family: Arial;
+            width: 140px;
+            height: 50px;
+            border-radius: 28px;
+            text-shadow: 5px 4px 5px gold;
+            background: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .container-fluid .row .col-md-4 {
+            width: 500px;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container-fluid .card {
+            max-width: 80%;
+            margin: auto;
+            transform: translateY(20%);
+        }
+
+        .product-separator {
+            margin-top: 20px;
+            animation: separateProduct 0.5s ease;
+        }
+
+        @keyframes separateProduct {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .hr-pro {
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 200% 100%;
+            animation: rainbow 5s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        .info-parfums .card {
+            max-width: 600px;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-parfums .card h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .info-parfums .card p {
+            margin: 0;
+        }
+        .footer-professionnels {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            z-index: 1000;
+            animation: fadeIn 1s;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+        .footer-content a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .footer-content a:hover {
+            color: #60c2e6;
+        }
+
+        .phone-link {
+            font-size: 18px;
+        }
+
+        .phone-number {
+            font-size: 16px;
+            }
+
+        .site-link {
+            font-size: 16px;
+        }
+
+        .site-name {
+            font-size: 14px;
+        }
+
+        .instagram-link {
+            font-size: 16px;
+        }
+
+        .instagram-name {
+            font-size: 14px;
+        }
+
+        .footer-content i {
+            font-size: 24px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .search-box input[type="text"] {
+            border: none;
+            outline: none;
+            padding: 10px;
+            width: 250px;
+            border-radius: 25px;
+        }
+        .search-box button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="h1">Desktop pages</h1>
+        <p class="h5">Un Monde de Possibilités: Explorez Notre Collection Féminine</p>
+    </header>
+    <div class="container-fluid hed">
+        <p class="h1 text-center my-5">
+            <strong class="text-light">Beauty Of Design</strong>
+            <a class="btn-custom" href="https://suenos.ma">SUENOS</a>
+        </p>
+        <p class="h3 text-secondary">
+            Dans un monde en constante évolution, il est essentiel de rester ouvert 
+            aux nouvelles idées et aux perspectives différentes. En embrassant la diversité 
+            et en favorisant l'inclusion, nous pouvons créer un environnement où chacun peut 
+            s'épanouir et contribuer à un avenir plus prometteur...
+        </p>
+        <div class="search-box">
+            <input type="text" placeholder="Rechercher..." id="searchField">
+            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark my-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/logosu.png" alt="" class="rounded-circle" style="width: 50px; height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ACC/accesoires.html">Précédente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="info-parfums">
+        <div class="card">
+            <h2>LIPSTICK / FOUNDATION / CONTOUR</h2>
+            <p>Description des produits...</p>
+        </div>
+    </div>
+    <main class="container-fluid">
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="col-md-4 product-separator" style="background-image: url('an7.jpg');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal1">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">ANASTASIA BEVERLY HILLS</h2>
+                        <p class="card-text">Un ensemble de lèvres en trois pièces.</p>
+                        <h4 class="card-subtitle mb-2 text-muted">ANASTASIA</h4>
+                        <a href="#" class="btn btn-primary text-dark">500.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-separator" style="background-image: url('cat2.jpg');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal2">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">CATRICE TRUE SKIN HYDRATING FOUNDATION</h2>
+                        <p class="card-text">Maecenas interdum consequat tellus vitae vehicsa.</p>
+                        <h4 class="card-subtitle mb-2 text-muted">TRUE SKIN</h4>
+                        <a href="#" class="btn btn-primary text-dark">85.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <br>
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="col-md-4 product-separator" style="background-image: url('gggh.png');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal3">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">BOURJOIS CONTOUR CLUBBING WATERPROOF</h2>
+                        <p class="card-text">Maecenas interdum consequat tellus vitae vehicsa.</p>
+                        <h4 class="card-subtitle mb-2 text-muted">WATERPROOF</h4>
+                        <a href="#" class="btn btn-primary text-dark">30.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-separator" style="background-image: url('hghghjh.jpg');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal4">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">CATRICE MATT LIQUID LIPSTICK</h2>
+                        <p class="card-text">Maecenas interdum consequat tellus vitae vehicsa.</p>
+                        <h4 class="card-subtitle mb-2 text-muted">CATRICE</h4>
+                        <a href="#" class="btn btn-primary text-dark">59.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-pro mt-5"></div>
+        <div class="info-parfums">
+            <div class="card">
+                <h2>PERFUMES</h2>
+                <p>Description des parfums...</p>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="col-md-4 product-separator" style="background-image: url('p1.jpg');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal5">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">ARMANI PRIVE MAGENTA TANZANITE</h2>
+                        <p class="card-text">Maecenas interdum consequat tellus vitae vehicsa. </p>
+                        <h4 class="card-subtitle mb-2 text-muted">MAGENTA TANZANITE</h4>
+                        <a href="#" class="btn btn-primary text-dark">3700.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-separator" style="background-image: url('p2.jpg');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal6">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">BOUCHERON - QUATRE ABSOLU DE NUIT</h2>
+                        <p class="card-text">Maecenas interdum consequat tellus vitae vehicsa. </p>
+                        <h4 class="card-subtitle mb-2 text-muted">BOUCHERON</h4>
+                        <a href="#" class="btn btn-primary text-dark">980.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <br>
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="col-md-4 product-separator" style="background-image: url('p3.jpg');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal7">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">BURBERRY HER BLOSSOM</h2>
+                        <p class="card-text">Maecenas interdum consequat tellus vitae vehicsa.</p>
+                        <h4 class="card-subtitle mb-2 text-muted">BURBERRY</h4>
+                        <a href="#" class="btn btn-primary text-dark">1135.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-separator" style="background-image: url('p4.jpg');">
+                <div class="card mb-3" data-bs-toggle="modal" data-bs-target="#myModal8">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">BVLGARI GOLDEA THE ESSENCE OF THE JEWELLE</h2>
+                        <p class="card-text">Maecenas interdum consequat tellus vitae vehicsa. </p>
+                        <h4 class="card-subtitle mb-2 text-muted">BVLGARI GOLDEA</h4>
+                        <a href="#" class="btn btn-primary text-dark">1099.00 MAD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="an7.jpg" class="img-fluid" alt="Anastasia Beverly Hills">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="cat2.jpg" class="img-fluid" alt="Catrice True Skin Hydrating Foundation">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="gggh.png" class="img-fluid" alt="Bourjois Contour Clubbing Waterproof">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="hghghjh.jpg" class="img-fluid" alt="Catrice Matt Liquid Lipstick">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="p1.jpg" class="img-fluid" alt="ARMANI PRIVE MAGENTA TANZANITE">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="p2.jpg" class="img-fluid" alt="BOUCHERON - QUATRE ABSOLU DE NUIT">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal7">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="p3.jpg" class="img-fluid" alt="BURBERRY HER BLOSSOM">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal8">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="p4.jpg" class="img-fluid" alt="BVLGARI GOLDEA THE ESSENCE OF THE JEWELLE">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-professionnels">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="tel:+212655687408" class="phone-link">
+                        <i class="fas fa-phone"></i>
+                        <span class="phone-number">+212 655-687-408</span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://suenos.ma" class="site-link" target="_blank">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="site-name">site: sueños</span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://instagram.com/parfumerie_suenos" class="instagram-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span class="instagram-name">@parfumerie_suenos</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+            modal.addEventListener('shown.bs.modal', function() {
+                modal.querySelector('img').classList.add('zoom');
+            });
+            modal.addEventListener('hidden.bs.modal', function() {
+                modal.querySelector('img').classList.remove('zoom');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchField = document.getElementById('searchField');
+            searchField.addEventListener('keyup', function() {
+                const searchText = searchField.value.toLowerCase();
+                const cards = Array.from(document.getElementsByClassName('card'));
+
+                cards.forEach(card => {
+                    const titleElement = card.querySelector('.card-title');
+                    if (titleElement) {
+                        const title = titleElement.innerText.toLowerCase();
+                        if (title.includes(searchText)) {
+                            card.parentElement.style.display = ""; 
+                        } else {
+                            card.parentElement.style.display = "none"; 
+                        }
+                    }
+                });
+            });
+        });
+    </script>    
+</body>
+</html>

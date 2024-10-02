@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandBlast :restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <style>
+         nav{
+            background: url(begg.jpg);
+            background-size: cover;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+
+           
+         }
+         h1{
+            color: rgb(121, 109, 109);
+         }
+         h1 ,h2{
+           
+            animation: parallax 5s linear infinite;
+        }
+
+        @keyframes parallax {
+                0% {
+                    color:rgb(151, 138, 138) ;
+                    text-shadow:10px 12px 21px #cf8b1e;
+                }
+                20%{
+                    color:rgb(90, 78, 78) ;
+                    text-shadow:11px 12px 22px #df8900;
+
+                }
+                40%{color:rgb(86, 86, 86) ;
+                    text-shadow:1px 1px 22px #df8900;
+
+                }
+                60%{color:rgb(76, 76, 76) ;
+                    text-shadow:-10px -12px 22px #df8900;
+
+                }
+                80%{
+                    color:rgb(53, 49, 49) ;
+                    text-shadow:-11px -12px 22px #df8900;
+
+
+                }
+                100% {
+                    color:rgb(151, 138, 138) ;
+                    text-shadow:11px 12px 22px #df8900;
+                 }
+         }
+    
+        .bg:hover ,.bg, .bg:focus {
+            
+            background-color: transparent;
+            
+            color: #434141;
+            border-color: #e07f11;
+            box-shadow: -9px -9px 16px rgb(193, 123, 17); 
+           }
+         footer a:hover ,  .bgf-hover:hover{
+
+                background-color: #974f1b ;
+                box-shadow: #e98233 1px 0px 22px ;
+                border-radius: 22px;
+            }
+
+            .bi-telephone-fill ,  .bi-envelope-fill, .bi-instagram {
+            width: 24px;
+            height: 24px;
+            margin: 4px;
+            fill: currentColor;
+            transition: transform 0.1s ease;
+            }
+            .bi-envelope-fill:hover, .bi-telephone-fill:hover , .bi-instagram:hover {
+            transform: translateY(-3px);
+            }
+            .bgf{
+                background-color: #cf8b1e;
+            }
+        main .div {
+            margin-top:150px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+        main .div .cart{
+            display: block;
+            background-color: #bb9558;
+            padding-top: 90px;
+            padding-left: 11px;
+            border-radius: 22px 22px 4px 4px;
+            width: 400px;
+            height: 250px;
+            position: relative;
+            display: inline;
+           
+          
+        }
+        @media (max-width:1216px) {
+            main .div .cart3{
+                    margin-top: 130px;
+            }
+        }
+        @media (max-width:816px){
+             main .div .cart2{
+                    margin-top: 140px;
+            }
+        }
+
+        main .div  .cart2 .img1{
+            height:202px ;
+            position: absolute;
+            bottom: 185px;
+            right: 1.39rem;            
+        }
+        main .div  .cart1 .img1{
+            height:242px ;
+            position: absolute;
+            bottom: 133px;
+            right: 5rem;            
+        }
+       main .div  .cart3 .img1{
+            height:202px ;
+            position: absolute;
+            bottom: 145px;
+            right: 5rem;            
+        }
+       h6{
+       color: #3b3027;
+       text-transform: capitalize;
+       font-size: 22px;
+
+       }
+       main .div a{
+        color: #7b5821;
+        font-size: 19px;
+       }
+       main a:hover{
+        color: #dba143;
+       }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h1 class="mt-5 container-fluid text-uppercase text-secondary1">welcome</h1>
+                <h2 class="mb-5 mx-1 container-fluid text-capitalize">to a Perfect Taste Renovation</h2>
+            </div>
+            <div class="container-fluid bg2 d-inline">
+                <form id="searchForm" class="d-flex justify-content-center nav-items w-50 mt-3" onsubmit="search(event)" role="search">
+                    <input type="text" id="searchField" placeholder="Recherche" class="bg form-control mr-2">
+                    <button type="submit" class="text-light mx-1 h-100 btn bgf bgf-hover rounded" style="font-size: small;">Rechercher</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="div">
+            <div class="cart cart1">
+                <img src="sumb.png" alt="" class="img1">
+
+                <h6>sombara</h6>
+                <div>
+                    <svg c xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    <a href="https://maps.app.goo.gl/218w9DahTQU3Fzc66" class="text-decoration-none">Martil</a>
+                    <a href="https://maps.app.goo.gl/GkoeyCaXV94BcJj57" class="text-decoration-none">tetouan</a>
+                    <a href="https://maps.app.goo.gl/aeZXwaCq53jp8Tzr8" class="text-decoration-none">tanger</a>
+
+                </div>
+                <button type="button" class="mt-1 btn bgf bgf-hover rounded"><a href="../sombara/sombraRestu.html" class="text-decoration-none  text-light m-2 text-capitalize  ">plus</a></button>
+            </div>
+            <div class="cart cart2">
+                <img src="pngaaa.com-75733.png" alt="" class="img1">
+                <h6>Mcdonald's</h6>
+                <div>
+                <svg c xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                <a href="https://maps.app.goo.gl/p2nyvX7QbTVezsmp8" class="text-decoration-none">tetouan</a>
+                <a href="https://maps.app.goo.gl/4ShusUKVBFaJePdX9" class="text-decoration-none">tanger</a>
+             </div>
+             <button type="button" class="mt-1 btn bgf bgf-hover rounded"><a href="../MACDO/macdo.html" class="text-decoration-none  text-light m-2 text-capitalize  ">plus</a></button>
+            </div>
+       
+             <div class="cart cart3">
+                <img src="cham.png" alt="" class="img1">
+                <h6>chahd cham</h6>  
+                <div>
+                    <svg c xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    <a href="https://maps.app.goo.gl/13RrW8V3SLuUN1nAA" class="text-decoration-none">Martil</a>
+                    <a href="https://maps.app.goo.gl/kcSiRAKK8xZDNHEk9" class="text-decoration-none">tetouan</a>
+                </div>
+                <button type="button" class="mt-1 btn bgf bgf-hover rounded"><a href="../chahd cham/chahd cham.html" class="text-decoration-none  text-light m-2 text-capitalize  ">plus</a></button>
+            </div>
+        </div>
+       
+    
+        <div class="div">
+            <div class="cart cart1">
+                <img src="sumb.png" alt="" class="img1">
+
+                <h6>sombara</h6>
+                <div>
+                    <svg c xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    <a href="https://maps.app.goo.gl/218w9DahTQU3Fzc66" class="text-decoration-none">Martil</a>
+                    <a href="https://maps.app.goo.gl/GkoeyCaXV94BcJj57" class="text-decoration-none">tetouan</a>
+                    <a href="https://maps.app.goo.gl/aeZXwaCq53jp8Tzr8" class="text-decoration-none">tanger</a>
+
+                </div>
+                <button type="button" class="mt-1 btn bgf bgf-hover rounded"><a href="sombraRestu.html" class="text-decoration-none  text-light m-2 text-capitalize  ">plus</a></button>
+            </div>
+            <div class="cart cart2">
+                <img src="pngaaa.com-75733.png" alt="" class="img1">
+                <h6>Mcdonald's</h6>
+                <div>
+                <svg c xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                <a href="https://maps.app.goo.gl/p2nyvX7QbTVezsmp8" class="text-decoration-none">tetouan</a>
+                <a href="https://maps.app.goo.gl/4ShusUKVBFaJePdX9" class="text-decoration-none">tanger</a>
+             </div>
+             <button type="button" class="mt-1 btn bgf bgf-hover rounded"><a href="sombraRestu.html" class="text-decoration-none  text-light m-2 text-capitalize  ">plus</a></button>
+            </div>
+       
+             <div class="cart cart3">
+                <img src="cham.png" alt="" class="img1">
+                <h6>chahd cham</h6>  
+                <div>
+                    <svg c xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    <a href="https://maps.app.goo.gl/13RrW8V3SLuUN1nAA" class="text-decoration-none">Martil</a>
+                    <a href="https://maps.app.goo.gl/kcSiRAKK8xZDNHEk9" class="text-decoration-none">tetouan</a>
+                </div>
+                <button type="button" class="mt-1 btn bgf bgf-hover rounded"><a href="sombraRestu.html" class="text-decoration-none  text-light m-2 text-capitalize  ">plus</a></button>
+            </div>
+        </div>
+       
+    </main>
+   
+
+    
+    <footer class="bgf text-light py-3 mt-3">
+        
+        <div class="row text-white text-center mb-0  d-flex justify-content-between" style=" border-radius: 10px;">
+        
+            <div class="col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg> <a class="nav-link text-light" href="https://wa.me/212625854418">+212 625 854 418</a>
+            </div>
+
+            <div class="col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                  </svg> <a class="nav-link text-light" href="mailto:chaimae15elel@gmail.com">brandblast1@gmail.com</a>
+            </div>
+
+            <div class="col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg> <a class="nav-link text-light" href="https://www.instagram.com/chaimae.ekh/">Brandblast</a>
+            </div>
+        
+        </div>
+</footer>
+<script>
+    function search(event) {
+        event.preventDefault(); // Empêche le formulaire de se soumettre et de recharger la page
+
+        const searchField = document.getElementById("searchField");
+        const searchTerm = searchField.value.toLowerCase();
+        const divs = document.querySelectorAll("main div");
+
+        divs.forEach(div => {
+            const h6Element = div.querySelector("h6");
+            if (h6Element) {
+                if (h6Element.textContent.toLowerCase().includes(searchTerm)) {
+                    div.style.display = ""; // Affiche les div qui correspondent au terme de recherche
+                } else {
+                    div.style.display = "none"; // Masque les div qui ne correspondent pas
+                }
+            }
+        });
+    }
+</script>
+    
+</body>
+</html>
